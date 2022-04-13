@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>急救队红五月活动</title>
+
+    <script src="./js/tab.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <!--四校区标签页-->
+    </div>
+    <div id = "tab">
+        <div class="input-card" style="width:24rem">
+            <button id="handan" class="on">邯郸校区</button>
+            <button id="jiangwan" class="off">江湾校区</button>
+            <button id="fenglin" class="off">枫林校区</button>
+            <button id="zhangjiang" class="off">张江校区</button>
+        </div>
+        
+        <div id="Page">
+            <div id="container" tabindex="0"></div>
+        </div>
+        <!-- <ul>
+            <li class="off">邯郸校区</li>
+            <li class="on">江湾校区</li>
+            <li class="off">枫林校区</li>
+            <li class="off">张江校区</li>
+        </ul> -->
+        <!-- <div id="secondPage" class="show">
+            <a href = "#">21</a><br/>
+        </div>
+        <div id="thirdPage" class = "hide">
+            <a href = "#">31</a><br/>
+        </div>
+        <div id="thirdPage" class = "hide">
+            <a href = "#">41</a><br/>
+        </div> -->
+    </div>
+    
+
+    <script src="https://webapi.amap.com/loader.js"></script>
+    <script>
+        AMapLoader.load({ //首次调用 load
+            key:'fec4bbb2754b9f1d3e7c6b9c7050fe67',//首次load key为必填
+            version:'2.0',
+            plugins:['AMap.Scale','AMap.ToolBar']
+        }).then((AMap)=>{
+            map = new AMap.Map('container',{
+                zoom:17, //初始化地图层级
+                center: [121.503523,31.296425]//邯郸
+            });
+            map.setLimitBounds(new AMap.Bounds([121.494355,31.303068],[121.510017,31.289292]));
+            //map.addControl(new AMap.Scale())
+            //map.addControl(new AMap.ToolBar())
+            // map.add(new AMap.Marker({
+            //     position:map.getCenter()
+            // }));
+        }).catch((e)=>{
+            console.error(e);
+        });
+    
+        // AMapLoader.load({ //可多次调用load
+        //     plugins:['AMap.MapType']
+        // }).then((AMap)=>{
+        //     map.addControl(new AMap.MapType())
+        // }).catch((e)=>{
+        //     console.error(e);
+        // });
+    
+    </script>
+</body>
+</html>

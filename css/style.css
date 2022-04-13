@@ -1,0 +1,93 @@
+/* 选项卡 */
+*{
+    padding:0px;
+    margin:0 auto;
+}
+
+#tab{
+    width:500px;
+    padding:1px;
+    height:150px;
+    margin:0 auto;
+}
+
+.input-card{
+    list-style:none; 
+    display:block;
+    height:30px;
+    line-height:30px; 
+    margin:0 auto;
+    /* border-bottom:2px #C88 solid; */
+}
+
+.input-card button{
+    background:rgb(255, 255, 255);
+    cursor:pointer;
+    float:left;
+    list-style:none;
+    height:29px;
+    line-height:29px;
+    padding:10px;
+    margin:10px;
+    border:1px solid #BBB; 
+    border-bottom:2px solid #C88;
+}
+
+.input-card button.on{
+    border-top:2px solid Saddlebrown; 
+    border-bottom:2px solid #FFF;
+}
+
+#tab div#Page{
+    height:500px;
+    width:600px; 
+    line-height:24px;
+    border-top:none;  
+    padding:1px; 
+    border:1px solid #336699;
+    padding:10px;
+}
+
+/* 地图 */
+#container {
+    width:600px;
+    height: 470px;
+    margin:0 auto; 
+} 
+
+/* a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    text-decoration:none;
+    color:#336699;
+} */
+
+/* #tab ul{
+    list-style:none; 
+    display:block;
+    height:30px;
+    line-height:30px; 
+    /* border-bottom:2px #C88 solid; 
+}
+
+#tab ul li{
+    background:#FFF;
+    cursor:pointer;
+    float:left;
+    list-style:none;
+    height:29px;
+    line-height:29px;
+    padding:10px;
+    margin:10px;
+    border:1px solid #BBB; 
+    border-bottom:2px solid #C88;
+}
+
+ */
+
+/* .hide{
+    display:none;
+} */
